@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/templates/hello_world.ts", "../src/templates/body.ts", "../src/ts/rendersite.ts"],
+  "sourcesContent": ["export const helloWorld = /*html*/`\n<p>Hello world from template</p>\n`", "import { helloWorld } from \"./hello_world\"\n\nexport const body = /*html*/`\n<body>\n\n${helloWorld}\n\n<div>\n<p>Hello world</p>\n</div>\n      \n</body>\n`", "import { body } from '../templates/body.ts'\n\nfunction renderSite() {\n    document.body.outerHTML = body\n}\nrenderSite()\nexport { renderSite }"],
+  "mappings": ";;AAAO,MAAM,aAAqB;AAAA;AAAA;;;ACE3B,MAAM,OAAe;AAAA;AAAA;AAAA,EAG1B;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;;ACHF,wBAAsB;AAClB,aAAS,KAAK,YAAY;AAAA;AAE9B;",
+  "names": []
+}

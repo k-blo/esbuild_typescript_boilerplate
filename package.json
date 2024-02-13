@@ -1,0 +1,30 @@
+{
+  "name": "esbuild-tutorial",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "node esbuild.config.js",
+      "dev": "node esbuild.config.js -w",
+      "lint": "eslint ."
+  },
+  "devDependencies": {
+      "esbuild": "^0.12.19",
+      "esbuild-serve": "^1.0.1",
+      "eslint": "^8.29.0",
+      "eslint-config-standard": "^17.0.0",
+      "eslint-plugin-import": "^2.26.0",
+      "eslint-plugin-n": "^15.6.0",
+      "eslint-plugin-promise": "^6.1.1",
+      "lint-staged": "^13.1.0"
+  },
+  "dependencies": {
+      "@types/three": "^0.158.3",
+      "esbuild-plugin-glsl": "^1.1.0",
+      "scroll-watcher": "^2.2.0",
+      "three": "^0.145.0"
+  },
+  "lint-staged": {
+      "*.js": "eslint"
+  }
+}
